@@ -123,7 +123,7 @@
         <el-upload
             class="avatar-uploader"
             :headers="headerObj"
-            action="http://localhost:8080/api/takeout/common/upload"
+            action="/api/takeout/common/upload"
             :show-file-list="false"
             :on-success="handleAvatarSuccess"
             :on-change="onChange"

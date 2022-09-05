@@ -32,3 +32,20 @@ spring:
         wall:
           config:
             multi-statement-allow: true
+  redis:
+    database: 0
+      host: redis
+      port: 6379
+      password: jykwi6-guxmeH-cokraz   # 密码（默认为空）
+      timeout: 6000ms  # 连接超时时长（毫秒）
+
+# Minio配置
+minio:
+  # minio配置的地址，端口9000
+  url: http://minio:9000
+  # 账号
+  accessKey: yaluadmin
+  # 密码
+  secretKey: tyrQy0-birkip-rikxim
+  # MinIO桶名字
+  bucketName: images

@@ -3,9 +3,9 @@ spring:
     druid:
       #MySQL
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/takeout?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+      url: jdbc:mysql://192.168.30.246:3306/takeout?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
       username: root
-      password: yx123456
+      password: xijkej-nivgec-wuSte7
       #      #Oracle
       #      driver-class-name: oracle.jdbc.OracleDriver
       #      url: jdbc:oracle:thin:@192.168.10.10:1521:xe
@@ -47,6 +47,12 @@ spring:
         wall:
           config:
             multi-statement-allow: true
+  redis:
+    database: 0
+      host: 192.168.30.246
+      port: 6379
+      password: jykwi6-guxmeH-cokraz   # 密码（默认为空）
+      timeout: 6000ms  # 连接超时时长（毫秒）
 
 ##多数据源的配置，需要引用renren-dynamic-datasource
 #dynamic:
@@ -65,11 +71,11 @@ spring:
 # Minio配置
 minio:
   # minio配置的地址，端口9000
-  url: http://192.168.65.100:9000
+  url: http://192.168.30.246:9000
   # 账号
-  accessKey: minio
+  accessKey: yaluadmin
   # 密码
-  secretKey: minio123
+  secretKey: tyrQy0-birkip-rikxim
   # MinIO桶名字
   bucketName: images
 

@@ -1,6 +1,6 @@
 {
     "name" : "美食元素",
-    "appid" : "__UNI__681CACA",
+    "appid" : "__UNI__549EE02",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -50,7 +50,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxab12212fe8c785f7",
+        "appid" : "wx663b06c80ea4556b",
         "setting" : {
             "urlCheck" : false,
             "es6" : true

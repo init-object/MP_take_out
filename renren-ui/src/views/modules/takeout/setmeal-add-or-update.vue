@@ -58,7 +58,7 @@
         <el-form-item label="套餐图片" class="uploadImg">
           <el-upload
               class="avatar-uploader"
-              action="http://localhost:8080/api/takeout/common/upload"
+              action="/api/takeout/common/upload"
               :headers="headerObj"
               :show-file-list="false"
               :on-success="handleAvatarSuccess"
