@@ -20,23 +20,6 @@ jobs:
         run: |
           echo APP_VERSION=`git describe --tags --always` >> $GITHUB_ENV
           echo "::set-output name=app_version::`git describe --tags --always`"
-      - name: Set up JDK 8
-        uses: actions/setup-java@v3
-        with:
-          java-version: '8'
-          distribution: 'temurin'
-          cache: maven
-      - name: Build with Maven
-        run: mvn -B package -Drevision=${{ env.APP_VERSION }} --file pom.xml
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v3.1.0
-        with:
-          name: my-artifact
-          path: |
-            renren-admin/target/*.jar
-            renren-admin/Dockerfile
-            renren-api/target/*.jar
-            renren-api/Dockerfile
   build-docker-admin:
     uses: ./.github/workflows/docker.yml
     needs: [build-jar]
