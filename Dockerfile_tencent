@@ -1,12 +1,13 @@
-FROM maven:3.8.6-jdk-8-slim AS build
+FROM maven:3.6.0-jdk-8-slim as build
 ARG BUILD_MODULE
+COPY setting.xml  /home/app
 COPY renren-generator /home/app/renren-generator
 COPY renren-common /home/app/renren-common
 COPY renren-dynamic-datasource /home/app/renren-dynamic-datasource
 COPY renren-api /home/app/renren-api
 COPY renren-admin /home/app/renren-admin
-COPY pom.xml /home/app
-RUN mvn -f /home/app/pom.xml  clean package -pl ${BUILD_MODULE} -am
+COPY pom.xml  /home/app
+RUN mvn  -s /home/app/settings.xml -f /home/app/pom.xml  clean package -pl ${BUILD_MODULE} -am
 
 FROM openjdk:8-jdk-slim as builder
 ARG BUILD_MODULE
