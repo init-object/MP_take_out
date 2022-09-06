@@ -1,3 +1,16 @@
+# build stage
+#使用14.15.0的node版本作为运行软件
+FROM node:14.15.0-alpine as build-stage
+#将此目录作为工作目录
+WORKDIR /app
+#复制本目录下的package文件（源文件）到工作目录（目标目录）
+COPY package*.json ./
+#在工作目录执行npm install
+RUN npm install
+#将本本录下所有文件复制到目标目录
+COPY . .
+RUN npm run build:prod
+
 FROM registry.cn-hangzhou.aliyuncs.com/wang-kun/tengine
 MAINTAINER wangkun_king@live.com
 
