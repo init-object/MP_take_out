@@ -10,7 +10,7 @@ COPY pom.xml  /home/app/
 RUN mvn  -s /home/app/settings.xml -f /home/app/pom.xml  clean package -pl ${BUILD_MODULE} -am
 
 FROM openjdk:8-jdk-slim as builder
-ARG BUILD_MODULE
+ARG BUILD_MODULE=renren-api
 WORKDIR /app
 COPY --from=build  /home/app/${BUILD_MODULE}/target/${BUILD_MODULE}.jar ${BUILD_MODULE}.jar
 RUN java -Djarmode=layertools -jar ${BUILD_MODULE}.jar extract
