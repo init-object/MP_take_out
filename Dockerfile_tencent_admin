@@ -1,6 +1,6 @@
 FROM maven:3.6.0-jdk-8-slim as build
 ARG BUILD_MODULE=renren-admin
-COPY setting.xml  /home/app/
+COPY settings.xml  /home/app/
 COPY renren-generator /home/app/renren-generator
 COPY renren-common /home/app/renren-common
 COPY renren-dynamic-datasource /home/app/renren-dynamic-datasource
