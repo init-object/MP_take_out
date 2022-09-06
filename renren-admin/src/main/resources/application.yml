@@ -70,3 +70,11 @@ mybatis-plus:
     prefix:
     blobType: BLOB
     boolValue: TRUE
+
+jasypt:
+  encryptor:
+    password: ${JASYPT_ENCRYPTOR_PASSWORD:}
+    algorithm: PBEWithMD5AndDES
+    property:
+      prefix: ENC(
+      suffix: )

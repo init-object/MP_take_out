@@ -5,7 +5,7 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://mysql:3306/takeout?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
       username: root
-      password: xijkej-nivgec-wuSte7
+      password: ENC(pO+6tmDPD1yM1yIcRnLEPtUx3st36x4jpJPqQO33Vu5+gYN0Ha54EQ==)
       initial-size: 10
       max-active: 100
       min-idle: 10
@@ -36,7 +36,7 @@ spring:
     database: 0
     host: redis
     port: 6379
-    password: jykwi6-guxmeH-cokraz   # 密码（默认为空）
+    password: ENC(qXSH4pw6FS1VrqU9UOPFLaNhUIjHJsd37eNezD4btaQhoFcTIS0EBA==)   # 密码（默认为空）
     timeout: 6000ms  # 连接超时时长（毫秒）
 
 # Minio配置
@@ -46,6 +46,6 @@ minio:
   # 账号
   accessKey: yaluadmin
   # 密码
-  secretKey: tyrQy0-birkip-rikxim
+  secretKey: ENC(KYmvE5wwkkvrrIiVL0oU92huzGJFkVQXaCf3TR8HVpb0S0371IkIUA==)
   # MinIO桶名字
   bucketName: images

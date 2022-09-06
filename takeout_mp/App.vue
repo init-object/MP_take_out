@@ -7,7 +7,7 @@
 	import regeneratorRuntime from 'lib/runtime/runtime.js';
 	export default {
 		globalData:{
-			QiNiuYunUrl:'http://192.168.65.100:9000/images/'
+			QiNiuYunUrl:'https://minio.wangkun.vip/images/'
 		},
 		methods:{
 			async wxLogin(loginParam) {

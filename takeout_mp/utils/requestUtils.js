@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:8081/api";
+const baseUrl = "https://api2.wangkun.vip/api";
 // const baseUrl = "http://192.168.126.150:8080";
 
 export const getBaseUrl = () =>{

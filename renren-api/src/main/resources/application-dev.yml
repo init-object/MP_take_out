@@ -4,7 +4,7 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://192.168.30.246:3306/takeout?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
       username: root
-      password: xijkej-nivgec-wuSte7
+      password: ENC(pO+6tmDPD1yM1yIcRnLEPtUx3st36x4jpJPqQO33Vu5+gYN0Ha54EQ==)
       initial-size: 10
       max-active: 100
       min-idle: 10
@@ -35,5 +35,5 @@ spring:
     database: 0
     host: 192.168.30.246
     port: 6379
-    password: jykwi6-guxmeH-cokraz   # 密码（默认为空）
+    password: ENC(qXSH4pw6FS1VrqU9UOPFLaNhUIjHJsd37eNezD4btaQhoFcTIS0EBA==)   # 密码（默认为空）
     timeout: 6000ms  # 连接超时时长（毫秒）

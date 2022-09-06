@@ -79,5 +79,13 @@ weixin:
   getPhoneNumberUrl: https://api.weixin.qq.com/wxa/business/getuserphonenumber?access_token=
   getAccessTokenUrl: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&
   jscode2sessionUrl: https://api.weixin.qq.com/sns/jscode2session
-  appid: wx663b06c80ea4556b
-  secret: 362516ff1f9c79a2308ace72bdb1bff4
+  appid: ${WEIXIN_APPID}
+  secret: ${WEIXIN_APPSECRET}
+
+jasypt:
+  encryptor:
+    password: ${JASYPT_ENCRYPTOR_PASSWORD:}
+    algorithm: PBEWithMD5AndDES
+    property:
+      prefix: ENC(
+      suffix: )
