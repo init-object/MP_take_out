@@ -1,4 +1,4 @@
-FROM maven:3.8.6-jdk-8-slim AS build
+FROM maven:3.8.2-jdk-8-slim AS build
 ARG BUILD_MODULE
 COPY renren-generator /home/app/renren-generator
 COPY renren-common /home/app/renren-common
